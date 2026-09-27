@@ -1,21 +1,38 @@
 const { defineConfig } = require('@vue/cli-service')
 
-const PUBLIC_SITE_FALLBACK = 'https://catalogo-vinologa-2026.netlify.app'
-const LEGACY_PUBLIC_SITE_HOSTS = ['catalogo18.netlify.app', 'catalogofinde.netlify.app']
+const PUBLIC_SITE_FALLBACK = 'https://catalogovinologa.netlify.app'
+const LEGACY_PUBLIC_SITE_HOSTS = [
+  'catalogo18.netlify.app',
+  'catalogofinde.netlify.app',
+  'catalogo-vinologa-2026.netlify.app',
+  'catalogo_vinologa_2026.netlify.app',
+]
 
-/** Sin barra final; para Open Graph / WhatsApp (VUE_APP_PUBLIC_SITE_URL en .env.production) */
+function isUnusablePublicHost(host) {
+  const h = String(host || '').toLowerCase()
+  if (!h) return true
+  if (LEGACY_PUBLIC_SITE_HOSTS.includes(h)) return true
+  if (h === 'github.com' || h === 'www.github.com') return true
+  if (h.endsWith('.github.io')) return true
+  if (h.includes('githubusercontent.com')) return true
+  if (h.includes('catalogo_vinologa_2026') || h.includes('catalogo-vinologa-2026')) return true
+  return false
+}
+
+/** Solo origen https de Netlify, sin path del repo de GitHub. */
 function publicSiteOrigin() {
-  let origin = (process.env.VUE_APP_PUBLIC_SITE_URL || '').replace(/\/+$/, '')
-  origin = origin.replace(/^http:\/\//i, 'https://')
-  if (origin) {
+  const raw = String(process.env.VUE_APP_PUBLIC_SITE_URL || '').trim()
+  if (raw) {
     try {
-      const host = new URL(origin).hostname.toLowerCase()
-      if (LEGACY_PUBLIC_SITE_HOSTS.includes(host)) origin = PUBLIC_SITE_FALLBACK
+      const parsed = new URL(raw.includes('://') ? raw : `https://${raw}`)
+      if (!isUnusablePublicHost(parsed.hostname)) {
+        return `https://${parsed.hostname.toLowerCase()}`
+      }
     } catch {
-      origin = PUBLIC_SITE_FALLBACK
+      /* usa fallback */
     }
   }
-  return origin || PUBLIC_SITE_FALLBACK
+  return PUBLIC_SITE_FALLBACK
 }
 
 const OG_TITLE = 'Catálogo Vinóloga 2026'

@@ -3,4 +3,4 @@
   publish = "dist"
 
 [build.environment]
-  VUE_APP_PUBLIC_SITE_URL = "https://catalogo-vinologa-2026.netlify.app"
+  VUE_APP_PUBLIC_SITE_URL = "https://catalogovinologa.netlify.app"

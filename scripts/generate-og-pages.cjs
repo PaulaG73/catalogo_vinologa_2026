@@ -11,7 +11,7 @@ const sharp = require('sharp')
 const ROOT = path.join(__dirname, '..')
 const PUBLIC = path.join(ROOT, 'public')
 const IMG_DIR = path.join(PUBLIC, 'img')
-const SITE = 'https://catalogo-vinologa-2026.netlify.app'
+const SITE = 'https://catalogovinologa.netlify.app'
 const CATALOG_OG_IMAGE = 'Vinóloga_IA.jpg'
 
 const packs = require(path.join(ROOT, 'src', 'data', 'catalogoPack.json'))

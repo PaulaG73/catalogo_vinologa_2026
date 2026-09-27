@@ -10,12 +10,16 @@ export const WHATSAPP_NUMBER_DIGITS = '56996450950'
 const PUBLIC_SITE_FROM_ENV = process.env.VUE_APP_PUBLIC_SITE_URL || ''
 
 /**
- * Si el .env no llega al bundle en dev, el enlace a la foto no puede quedar vacío.
- * Cambia esto si despliegas en otro dominio (o define siempre VUE_APP_PUBLIC_SITE_URL).
+ * URL pública de Netlify (sin path). El repo de GitHub se llama catalogo_vinologa_2026;
+ * ese nombre no es el sitio. Si se usa como path o como subdomain, WhatsApp abre 404 y no hay foto.
  */
-const WHATSAPP_FALLBACK_SITE_ORIGIN = 'https://catalogo-vinologa-2026.netlify.app'
-/** Hostnames viejos: al renombrar el sitio en Netlify dejan de existir y WhatsApp abre “Site not found”. */
-const LEGACY_PUBLIC_SITE_HOSTS = ['catalogo18.netlify.app', 'catalogofinde.netlify.app']
+const WHATSAPP_FALLBACK_SITE_ORIGIN = 'https://catalogovinologa.netlify.app'
+const LEGACY_PUBLIC_SITE_HOSTS = [
+  'catalogo18.netlify.app',
+  'catalogofinde.netlify.app',
+  'catalogo-vinologa-2026.netlify.app',
+  'catalogo_vinologa_2026.netlify.app',
+]
 
 function publicSiteUrlFromEnv() {
   return PUBLIC_SITE_FROM_ENV
@@ -25,41 +29,39 @@ function digitsOnly() {
   return WHATSAPP_NUMBER_DIGITS.replace(/\D/g, '')
 }
 
-function normalizeHttpsRoot(url) {
-  const u = String(url || '')
-    .trim()
-    .replace(/\/+$/, '')
-  if (!u) return ''
-  return u.replace(/^http:\/\//i, 'https://')
+function isUnusablePublicHost(host) {
+  const h = String(host || '').toLowerCase()
+  if (!h) return true
+  if (LEGACY_PUBLIC_SITE_HOSTS.includes(h)) return true
+  if (h === 'localhost' || h === '127.0.0.1') return true
+  if (h === 'github.com' || h === 'www.github.com') return true
+  if (h.endsWith('.github.io')) return true
+  if (h.includes('githubusercontent.com')) return true
+  if (h.includes('catalogo_vinologa_2026') || h.includes('catalogo-vinologa-2026')) return true
+  return false
 }
 
-function rewriteLegacyPublicOrigin(origin) {
-  const o = normalizeHttpsRoot(origin)
-  if (!o) return ''
+/** Solo origen https, sin path del repo ni barra final. */
+function normalizeHttpsRoot(url) {
+  const raw = String(url || '').trim()
+  if (!raw) return ''
   try {
-    const host = new URL(o).hostname.toLowerCase()
-    if (LEGACY_PUBLIC_SITE_HOSTS.includes(host)) return WHATSAPP_FALLBACK_SITE_ORIGIN
+    const parsed = new URL(raw.includes('://') ? raw : `https://${raw}`)
+    if (isUnusablePublicHost(parsed.hostname)) return ''
+    return `https://${parsed.hostname.toLowerCase()}`
   } catch {
-    return o
+    return ''
   }
-  return o
 }
 
 /**
- * Origen público para enlaces en WhatsApp: env, luego fallback fijo, luego origin (no localhost).
+ * Enlaces de WhatsApp: siempre el sitio Netlify vivo.
+ * No usar window.location (GitHub Pages / preview) ni paths tipo /catalogo_vinologa_2026.
  */
 function getShareBaseOrigin() {
-  let origin = rewriteLegacyPublicOrigin(publicSiteUrlFromEnv())
-  if (!origin) origin = normalizeHttpsRoot(WHATSAPP_FALLBACK_SITE_ORIGIN)
-  if (origin) return origin
-
-  if (typeof window !== 'undefined' && window.location?.origin) {
-    const o = window.location.origin.replace(/\/+$/, '')
-    if (/^https?:\/\/(localhost|127\.0\.0\.1)(:\d+)?$/i.test(o)) return ''
-    return rewriteLegacyPublicOrigin(o)
-  }
-
-  return ''
+  const fromEnv = normalizeHttpsRoot(publicSiteUrlFromEnv())
+  if (fromEnv) return fromEnv
+  return WHATSAPP_FALLBACK_SITE_ORIGIN
 }
 
 const OG_PAGE_SUFFIX = '.html'

@@ -5,7 +5,7 @@
 SPA en Vue 3 con packs de vino: presentación de marca, carrusel y pedido por WhatsApp.
 
 - **Proyecto npm:** `catalogo_vinologa_2026`
-- **Demo (producción):** [catalogo-vinologa-2026.netlify.app](https://catalogo-vinologa-2026.netlify.app)
+- **Demo (producción):** [catalogovinologa.netlify.app](https://catalogovinologa.netlify.app)
 
 ---
 
@@ -203,7 +203,7 @@ Para que el `index.html` generado incluya `og:url`, `og:image` y las meta de Twi
 
 |---|---|---|
 
-| `.env.production` en la raíz (cargado al ejecutar `npm run build`) | `VUE_APP_PUBLIC_SITE_URL` | `https://catalogo-vinologa-2026.netlify.app` |
+| `.env.production` en la raíz (cargado al ejecutar `npm run build`) | `VUE_APP_PUBLIC_SITE_URL` | `https://catalogovinologa.netlify.app` |
 
 | Panel de Netlify → Environment variables | Misma variable | Mismo valor |
 
