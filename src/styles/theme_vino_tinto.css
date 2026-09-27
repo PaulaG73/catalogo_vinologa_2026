@@ -1,0 +1,144 @@
+/*Paleta vino: fondos muy pálidos + acento legible (sustituye el rol del verde #198754) */
+:root,
+[data-bs-theme="light"] {
+  --vin-palido: #f0e4e7;
+  --vin-fondo-seccion: #f6f0f2;
+  --vin-acento: #6d2c35;
+  --vin-acento-rgb: 109, 44, 53;
+  --vin-acento-hover: #54252b;
+  --vin-acento-active: #451e22;
+
+  --vin-profundo: #3a0f18;
+  --vin-profundo-rgb: 58, 15, 24;
+
+  /* Look oscuro: negro neutro (menos carga “vino” en el pixel) + superficies */
+  --vin-negro-marca: #0a0a0a;
+  --vin-superficie-oscura: #121112;
+  --vin-superficie-alterna: #181618;
+  /* Burdeos packs: un poco más bajo en saturación / más legible con texto claro */
+  --vin-fondo-packs: #24161c;
+  --vin-texto-claro: rgba(255, 255, 255, 0.96);
+  --vin-texto-muted: rgba(255, 255, 255, 0.8);
+  /* Acento aclarado para texto sobre negro (p. ej. “Sobre mí”) */
+  --vin-acento-sobre-negro: #e4b3bc;
+  --vin-borde-sutil: rgba(255, 255, 255, 0.1);
+
+  /* Verde marca WhatsApp (solo botón WA) */
+  --wa-green: #25d366;
+  --wa-green-hover: #20bd5a;
+  --wa-green-active: #1da851;
+  --wa-green-rgb: 37, 211, 102;
+
+  --bs-success: var(--vin-acento);
+  --bs-success-rgb: var(--vin-acento-rgb);
+  --bs-success-text-emphasis: #3d1a1f;
+  --bs-success-bg-subtle: var(--vin-palido);
+  --bs-success-border-subtle: #d4bfc4;
+}
+
+.bg-vino-palido {
+  background-color: var(--vin-palido) !important;
+}
+
+.bg-vino-profundo {
+  background-color: var(--vin-profundo) !important;
+}
+
+.bg-vin-negro {
+  background-color: var(--vin-negro-marca) !important;
+}
+
+.btn-whatsapp {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--wa-green);
+  --bs-btn-border-color: var(--wa-green);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--wa-green-hover);
+  --bs-btn-hover-border-color: var(--wa-green-hover);
+  --bs-btn-focus-shadow-rgb: var(--wa-green-rgb);
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: var(--wa-green-active);
+  --bs-btn-active-border-color: var(--wa-green-active);
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: var(--wa-green);
+  --bs-btn-disabled-border-color: var(--wa-green);
+}
+
+/* Botón pill WhatsApp (tarjetas y footer) */
+.wa-pill-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.48rem 1rem 0.48rem 0.85rem;
+  font-family: 'Nunito', system-ui, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  line-height: 1.25;
+  white-space: nowrap;
+  border-width: 1px;
+  border-color: rgba(255, 255, 255, 0.45);
+  border-radius: 0.4rem;
+  text-decoration: none;
+  box-shadow:
+    0 4px 16px rgba(0, 0, 0, 0.45),
+    inset 0 1px 0 rgba(255, 255, 255, 0.22);
+}
+
+.wa-pill-icon {
+  flex-shrink: 0;
+  width: 1.05rem;
+  height: 1.05rem;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.25));
+}
+
+.wa-pill-label {
+  flex-shrink: 0;
+  font-size: clamp(0.78rem, 2vw, 0.9rem);
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  text-shadow:
+    0 1px 0 rgba(0, 0, 0, 0.35),
+    0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.footer-wa-pill.wa-pill-btn {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.btn-success {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--vin-acento);
+  --bs-btn-border-color: var(--vin-acento);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--vin-acento-hover);
+  --bs-btn-hover-border-color: #4a2229;
+  --bs-btn-focus-shadow-rgb: var(--vin-acento-rgb);
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: var(--vin-acento-active);
+  --bs-btn-active-border-color: #3d1c22;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: var(--vin-acento);
+  --bs-btn-disabled-border-color: var(--vin-acento);
+}
+
+.btn-outline-success {
+  --bs-btn-color: var(--vin-acento);
+  --bs-btn-border-color: var(--vin-acento);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--vin-acento);
+  --bs-btn-hover-border-color: var(--vin-acento);
+  --bs-btn-focus-shadow-rgb: var(--vin-acento-rgb);
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: var(--vin-acento-hover);
+  --bs-btn-active-border-color: #4a2229;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: var(--vin-acento);
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: var(--vin-acento);
+  --bs-gradient: none;
+}

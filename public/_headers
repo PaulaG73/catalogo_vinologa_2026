@@ -1,0 +1,9 @@
+# Evita que el navegador sirva un index.html viejo que apunta a chunks JS antiguos (mensaje WhatsApp desactualizado).
+/
+  Cache-Control: no-cache, must-revalidate
+
+/index.html
+  Cache-Control: no-cache, must-revalidate
+
+/og-*.html
+  Cache-Control: no-cache, must-revalidate

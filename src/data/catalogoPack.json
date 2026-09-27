@@ -1,0 +1,619 @@
+[
+  {
+    "id": "1",
+    "title": "N°1 Blancos/Alchemysta Wines",
+    "valle": "Valle de Casablanca",
+    "image": "/img/Blancos.jpg",
+    "price": "$15.000",
+    "bloques": [
+      {
+        "tipoCopa": "blanco",
+        "cantidadBotellas": 1,
+        "nombreVino": "Angelina White Angel, Sauvignon Blanc"
+      },
+      {
+        "tipoCopa": "blanco",
+        "cantidadBotellas": 1,
+        "nombreVino": "Angelina White Angel, Chardonnay"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "title": "N°2 Espumantes/MujerAndina Wines",
+    "valle": "Valles del Bío Bío, Itata y Cachapoal",
+    "image": "/img/Espumantes.jpg",
+    "price": "$25.000",
+    "bloques": [
+      {
+        "tipoCopa": "espumante",
+        "cantidadBotellas": 1,
+        "nombreVino": "Ai! Brut, Chardonnay/Pinot Noir"
+      },
+      {
+        "tipoCopa": "rosado",
+        "cantidadBotellas": 1,
+        "nombreVino": "Livianita de Sangre Cocktail Brut Zero, Cinsault/Chardonnay"
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "title": "N°3 Rosados/Viñateros de Raíz y MujerAndina Wines",
+    "valle": "Valle del Maipo",
+    "image": "/img/Rosados.jpg",
+    "price": "$25.000",
+    "bloques": [
+      {
+        "tipoCopa": "rosado",
+        "cantidadBotellas": 1,
+        "nombreVino": "Umbral, Garnacha/Syrah/Monastrell"
+      },
+      {
+        "tipoCopa": "rosado",
+        "cantidadBotellas": 1,
+        "nombreVino": "Keluna, Cabernet Sauvignon/Cabernet Franc"
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "title": "N°4 Ensamblajes Tintos/OWM Wines",
+    "valle": "Valle de Colchagua",
+    "image": "/img/Tintos.jpg",
+    "price": "$25.000",
+    "bloques": [
+      {
+        "tipoCopa": "tinto",
+        "cantidadBotellas": 1,
+        "nombreVino": "OWM Hand Made, Ensamblaje 2018"
+      },
+      {
+        "tipoCopa": "tinto",
+        "cantidadBotellas": 1,
+        "nombreVino": "OWM Hand Made Black, Ensamblaje 2021"
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "title": "N°5 Burbujas Gift/MujerAndina Wines",
+    "valle": "Valles del Maipo y Colchagua",
+    "image": "/img/twopack_grand_levita_brut.jpg",
+    "price": "$29.000",
+    "bloques": [
+      {
+        "tipoCopa": "rosado",
+        "cantidadBotellas": 1,
+        "nombreVino": "Grand Levita Brut Rosé, Syrah/Chardonnay, 750 ml"
+      },
+      {
+        "tipoCopa": "rosado",
+        "cantidadBotellas": 1,
+        "nombreVino": "Grand Levita Brut Rosé, Syrah/Chardonnay, 375 ml"
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "title": "N°6 Winemaker's Tintos/Viña Algorta",
+    "valle": "Valle de Rapel",
+    "image": "/img/Tintos_SP.jpg",
+    "price": "$32.000",
+    "bloques": [
+      {
+        "tipoCopa": "tinto",
+        "cantidadBotellas": 1,
+        "nombreVino": "Winemaker Series, Wild Carménère"
+      },
+      {
+        "tipoCopa": "tinto",
+        "cantidadBotellas": 1,
+        "nombreVino": "Winemaker Series, The Blend"
+      }
+    ]
+  },
+  {
+    "id": "7",
+    "title": "N°7 Tripack Rock Stars",
+    "valle": "Valles de Rapel y Colchagua",
+    "agotado": true,
+    "image": "/img/tripack_Rock_Stars.jpg",
+    "price": "$23.000",
+    "bloques": [
+      {
+        "tipoCopa": "tinto",
+        "cantidadBotellas": 1,
+        "nombreVino": "Parróne Cabernet Sauvignon, Alchemysta Wines"
+      },
+      {
+        "tipoCopa": "tinto",
+        "cantidadBotellas": 1,
+        "nombreVino": "Pillo de Panamá Cabernet Sauvignon/Syrah/Petit Verdot, OWM Wines"
+      },
+      {
+        "tipoCopa": "tinto",
+        "cantidadBotellas": 1,
+        "nombreVino": "Grand Reserve, Cabernet Sauvignon, Viña Algorta"
+      }
+    ]
+  },
+  {
+    "id": "8",
+    "title": "N°8 Tripack Parrone/Alchemy Wines",
+    "valle": "Valles de Colchagua y Cachapoal",
+    "agotado": true,
+    "image": "/img/tripack_parrone.jpg",
+    "price": "$30.000",
+    "bloques": [
+      {
+        "tipoCopa": "tinto",
+        "cantidadBotellas": 1,
+        "nombreVino": "Parróne Reserve Cabernet Sauvignon"
+      },
+      {
+        "tipoCopa": "tinto",
+        "cantidadBotellas": 1,
+        "nombreVino": "Parróne Grand Reserve Syrah"
+      },
+      {
+        "tipoCopa": "tinto",
+        "cantidadBotellas": 1,
+        "nombreVino": "Parróne Grand Reserve Malbec"
+      }
+    ]
+  },
+  {
+    "id": "9",
+    "title": "N°9 Tripack OMG!/OWM Wines",
+    "valle": "Valle de Colchagua",
+    "image": "/img/OMG!.jpg",
+    "price": "$35.000",
+    "bloques": [
+      {
+        "tipoCopa": "tinto",
+        "cantidadBotellas": 1,
+        "nombreVino": "OWM Hand Made, Ensamblaje 2018"
+      },
+      {
+        "tipoCopa": "tinto",
+        "cantidadBotellas": 1,
+        "nombreVino": "OWM Hand Made Black, Ensamblaje 2021"
+      },
+      {
+        "tipoCopa": "tinto",
+        "cantidadBotellas": 1,
+        "nombreVino": "Divino Petit, Petite Sirah/Petit Verdot"
+      }
+    ]
+  },
+  {
+    "id": "10",
+    "title": "N°10 Tripack Mujer Andina",
+    "valle": "Valles del Itata, Cachapoal, Bío Bío, Maipo y Colchagua",
+    "image": "/img/tripack_maw.jpg",
+    "price": "$40.000",
+    "bloques": [
+      {
+        "tipoCopa": "rosado",
+        "cantidadBotellas": 1,
+        "nombreVino": "Keluna Rosé, Cabernet Sauvignon/Cabernet Franc, Valle del Maipo"
+      },
+      {
+        "tipoCopa": "espumante",
+        "cantidadBotellas": 1,
+        "nombreVino": "Ai! Brut, Chardonnay/Pinot Noir, Valle del Bío Bío"
+      },
+      {
+        "tipoCopa": "tinto",
+        "cantidadBotellas": 1,
+        "nombreVino": "El Infaltable Carménère, Valle del Maipo"
+      }
+    ]
+  },
+  {
+    "id": "11",
+    "title": "N°11 Tripack Alchemy Wines",
+    "valle": "Valles de Colchagua y Cachapoal",
+    "agotado": true,
+    "image": "/img/tripack_alchemysta.jpg",
+    "price": "$35.000",
+    "bloques": [
+      {
+        "tipoCopa": "tinto",
+        "cantidadBotellas": 1,
+        "nombreVino": "Parróne Grand Reserve Syrah"
+      },
+      {
+        "tipoCopa": "tinto",
+        "cantidadBotellas": 1,
+        "nombreVino": "Parróne Grand Reserve Malbec"
+      },
+      {
+        "tipoCopa": "tinto",
+        "cantidadBotellas": 1,
+        "nombreVino": "Grand Cuveé, Ensamblaje 2022"
+      }
+    ]
+  },
+  {
+    "id": "12",
+    "title": "N°12 Sensaciones",
+    "valle": "Valles de Cachapoal e Itata",
+    "image": "/img/tripck_sensaciones.jpg",
+    "price": "$39.000",
+    "bloques": [
+      {
+        "tipoCopa": "rosado",
+        "cantidadBotellas": 1,
+        "nombreVino": "Livianita de Sangre Cocktail Brut Zero, Cinsault/Chardonnay, Mujer Andina Wines"
+      },
+      {
+        "tipoCopa": "rosado",
+        "cantidadBotellas": 1,
+        "nombreVino": "Taii Velo, 100% Torontel, Valle de Itata, Peroli Family & Friends"
+      },
+      {
+        "tipoCopa": "tinto",
+        "cantidadBotellas": 1,
+        "nombreVino": "Mala Testa, Garnache/Syrah/Mourvedre, Valle Cachapoal Andes, by Algorta"
+      }
+    ]
+  },
+  {
+    "id": "13",
+    "title": "N°13 Tripack MaipOrigen",
+    "valle": "Valle del Maipo",
+    "image": "/img/tripack_Maiporigen.jpg",
+    "price": "$43.000",
+    "bloques": [
+      {
+        "tipoCopa": "tinto",
+        "cantidadBotellas": 1,
+        "nombreVino": "Jardinero Mezcla Tinta, Valle del Maipo, Viñateros de Raíz"
+      },
+      {
+        "tipoCopa": "tinto",
+        "cantidadBotellas": 1,
+        "nombreVino": "El Infaltable Carménère, Mujer Andina Wines"
+      },
+      {
+        "tipoCopa": "tinto",
+        "cantidadBotellas": 1,
+        "nombreVino": "Jardinero Touriga Nacional, Viñateros de Raíz"
+      }
+    ]
+  },
+  {
+    "id": "14",
+    "title": "N°14 Tripack Espumantes/MujerAndina Wines",
+    "valle": "Valles delItata, Cachapoal, Bío Bío, Maipo y Colchagua",
+    "image": "/img/tripack_espumantes_maw.jpg",
+    "price": "$45.000",
+    "bloques": [
+      {
+        "tipoCopa": "rosado",
+        "cantidadBotellas": 1,
+        "nombreVino": "Livianita de Sangre Cocktail Brut Zero, Cinsault/Chardonnay"
+      },
+      {
+        "tipoCopa": "espumante",
+        "cantidadBotellas": 1,
+        "nombreVino": "Ai! Brut, Chardonnay/Pinot Noir"
+      },
+      {
+        "tipoCopa": "rosado",
+        "cantidadBotellas": 1,
+        "nombreVino": "Grand Levita Brut Rosé, Syrah/Chardonnay"
+      }
+    ]
+  },
+  {
+    "id": "15",
+    "title": "N°15 Infaltables New/Mujer Andina Wines",
+    "valle": "Valles del Maipo y Colchagua",
+    "image": "/img/tripack_infaltables_new.jpg",
+    "price": "$50.000",
+    "bloques": [
+      {
+        "tipoCopa": "blanco",
+        "cantidadBotellas": 1,
+        "nombreVino": "El Infaltable Chardonnay, Valle de Colchagua"
+      },
+      {
+        "tipoCopa": "blanco",
+        "cantidadBotellas": 1,
+        "nombreVino": "El Infaltable Verdejo/Albariño, Valle del Maipo"
+      },
+      {
+        "tipoCopa": "tinto",
+        "cantidadBotellas": 1,
+        "nombreVino": "El Infaltable Syrah, Valle de Colchagua"
+      }
+    ]
+  },
+  {
+    "id": "16",
+    "title": "N°16 Tripack Grand Levita/MujerAndina Wines",
+    "valle": "Valles del Maipo y Colchagua",
+    "image": "/img/tripack_grand_levita.jpg",
+    "price": "$69.000",
+    "bloques": [
+      {
+        "tipoCopa": "rosado",
+        "cantidadBotellas": 1,
+        "nombreVino": "Grand Levita Brut Rosé, Syrah/Chardonnay"
+      },
+      {
+        "tipoCopa": "rosado",
+        "cantidadBotellas": 1,
+        "nombreVino": "Grand Levita Nature Rosé, Syrah 100% orgánico"
+      },
+      {
+        "tipoCopa": "espumante",
+        "cantidadBotellas": 1,
+        "nombreVino": "Grand Levita Nature, Blanc de Blancs, Albariño/Verdejo"
+      }
+    ]
+  },
+  {
+    "id": "17",
+    "title": "N°17 Caja Algorta Grand Reserve",
+    "valle": "Valle de Rapel",
+    "agotado": true,
+    "image": "/img/GR_Algorta.jpg",
+    "price": "$40.000",
+    "bloques": [
+      {
+        "tipoCopa": "tinto",
+        "cantidadBotellas": 3,
+        "nombreVino": "Grand Reserve, Carménère"
+      },
+      {
+        "tipoCopa": "tinto",
+        "cantidadBotellas": 3,
+        "nombreVino": "Grand Reserve, Cabernet Sauvignon"
+      }
+    ]
+  },
+  {
+    "id": "18",
+    "title": "N°18 Caja Rock Stars",
+    "valle": "Valles de Rapel Cachapoal y Colchagua",
+    "agotado": true,
+    "image": "/img/pack-rockstars.jpg",
+    "price": "$45.000",
+    "bloques": [
+      {
+        "tipoCopa": "tinto",
+        "cantidadBotellas": 2,
+        "nombreVino": "Parróne Reserva Cabernet Sauvignon, Alchemysta Wines"
+      },
+      {
+        "tipoCopa": "tinto",
+        "cantidadBotellas": 2,
+        "nombreVino": "Pillo de Panamá Cabernet Sauvignon/Syrah/Petit Verdot, OWM Wines"
+      },
+      {
+        "tipoCopa": "tinto",
+        "cantidadBotellas": 2,
+        "nombreVino": "Grand Reserve, Cabernet Sauvignon, Viña Algorta"
+      }
+    ]
+  },
+  {
+    "id": "19",
+    "title": "N°19 Caja OWM/Mujer Andina Wines",
+    "valle": "Valles del Bío Bío, Maipo y Colchagua",
+    "image": "/img/caja_pillo_maw.jpg",
+    "price": "$60.000",
+    "bloques": [
+      {
+        "tipoCopa": "rosado",
+        "cantidadBotellas": 1,
+        "nombreVino": "Keluna Rosé, Cabernet Sauvignon/Cabernet Franc, Valle del Maipo"
+      },
+      {
+        "tipoCopa": "espumante",
+        "cantidadBotellas": 1,
+        "nombreVino": "Ai! Brut, Chardonnay/Pinot Noir, Valle del Bío Bío"
+      },
+      {
+        "tipoCopa": "tinto",
+        "cantidadBotellas": 1,
+        "nombreVino": "El Infaltable Carménère, Valle del Maipo"
+      },
+      {
+        "tipoCopa": "tinto",
+        "cantidadBotellas": 3,
+        "nombreVino": "Pillo de Panamá Cabernet Sauvignon/Syrah/Petit Verdot, OWM Wines"
+      }
+    ]
+  },
+  {
+    "id": "20",
+    "title": "N°20 Caja OWM Wines",
+    "valle": "Valle de Colchagua",
+    "image": "/img/caja_pillo_owm.jpg",
+    "price": "$60.000",
+    "bloques": [
+      {
+        "tipoCopa": "tinto",
+        "cantidadBotellas": 1,
+        "nombreVino": "OWM Hand Made, Ensamblaje 2018"
+      },
+      {
+        "tipoCopa": "tinto",
+        "cantidadBotellas": 1,
+        "nombreVino": "OWM Hand Made Black, Ensamblaje 2021"
+      },
+      {
+        "tipoCopa": "tinto",
+        "cantidadBotellas": 1,
+        "nombreVino": "Divino Petit, Petite Sirah/Petit Verdot"
+      },
+      {
+        "tipoCopa": "tinto",
+        "cantidadBotellas": 3,
+        "nombreVino": "Pillo de Panamá Cabernet Sauvignon/Syrah/Petit Verdot, OWM Wines"
+      }
+    ]
+  },
+  {
+    "id": "21",
+    "title": "N°21 Caja OWM/Alchemy Wines",
+    "valle": "Valles de Colchagua y Cachapoal",
+    "image": "/img/caja_pillo_alchemy.jpg",
+    "price": "$60.000",
+    "bloques": [
+      {
+        "tipoCopa": "tinto",
+        "cantidadBotellas": 1,
+        "nombreVino": "Parróne Grand Reserve Syrah"
+      },
+      {
+        "tipoCopa": "tinto",
+        "cantidadBotellas": 1,
+        "nombreVino": "Parróne Grand Reserve Malbec"
+      },
+      {
+        "tipoCopa": "tinto",
+        "cantidadBotellas": 1,
+        "nombreVino": "Grand Cuveé, Ensamblaje 2022"
+      },
+      {
+        "tipoCopa": "tinto",
+        "cantidadBotellas": 3,
+        "nombreVino": "Pillo de Panamá Cabernet Sauvignon/Syrah/Petit Verdot, OWM Wines"
+      }
+    ]
+  },
+  {
+    "id": "22",
+    "title": "N°22 Caja Colección Algorta",
+    "valle": "Valle de Rapel",
+    "agotado": true,
+    "image": "/img/coleccion-algorta.jpg",
+    "price": "$55.000",
+    "bloques": [
+      {
+        "tipoCopa": "tinto",
+        "cantidadBotellas": 2,
+        "nombreVino": "Grand Reserve, Cabernet Sauvignon"
+      },
+      {
+        "tipoCopa": "tinto",
+        "cantidadBotellas": 2,
+        "nombreVino": "Family Reserve, Cabernet Sauvignon"
+      },
+      {
+        "tipoCopa": "tinto",
+        "cantidadBotellas": 1,
+        "nombreVino": "Winemaker Series, Wild Carménère"
+      },
+      {
+        "tipoCopa": "tinto",
+        "cantidadBotellas": 1,
+        "nombreVino": "Winemaker Series, The Blend"
+      }
+    ]
+  },
+  {
+    "id": "23",
+    "title": "N°23 Caja Alchemy Wines",
+    "valle": "Valles de Colchagua y Cachapoal",
+    "agotado": true,
+    "image": "/img/caja_alchemysta_wines.jpg",
+    "price": "$60.000",
+    "bloques": [
+      {
+        "tipoCopa": "tinto",
+        "cantidadBotellas": 3,
+        "nombreVino": "Parróne Reserva Cabernet Sauvignon"
+      },
+      {
+        "tipoCopa": "tinto",
+        "cantidadBotellas": 1,
+        "nombreVino": "Parróne Grand Reserve Syrah"
+      },
+      {
+        "tipoCopa": "tinto",
+        "cantidadBotellas": 1,
+        "nombreVino": "Parróne Grand Reserve Malbec"
+      },
+      {
+        "tipoCopa": "tinto",
+        "cantidadBotellas": 1,
+        "nombreVino": "Grand Cuveé, Ensamblaje 2022"
+      }
+    ]
+  },
+  {
+    "id": "24",
+    "title": "N°24 Caja Innovación",
+    "valle": "Valles del Maipo, Cachapoal e Itata",
+    "image": "/img/innovacion.jpg",
+    "price": "$75.000",
+    "bloques": [
+      {
+        "tipoCopa": "rosado",
+        "cantidadBotellas": 2,
+        "nombreVino": "Livianita de Sangre Cocktail Brut Zero, Cinsault/Chardonnay, Mujer Andina Wines"
+      },
+      {
+        "tipoCopa": "tinto",
+        "cantidadBotellas": 1,
+        "nombreVino": "El Infaltable Carménère, Mujer Andina Wines"
+      },
+      {
+        "tipoCopa": "tinto",
+        "cantidadBotellas": 2,
+        "nombreVino": "Jardinero Touriga Nacional, Viñateros de Raíz"
+      },
+      {
+        "tipoCopa": "tinto",
+        "cantidadBotellas": 1,
+        "nombreVino": "Jardinero Mezcla Tinta, Viñateros de Raíz"
+      }
+    ]
+  },
+  {
+    "id": "25",
+    "title": "N°25 Caja Mujer Andina",
+    "valle": "Valles del Itata, Cachapoal, Bío Bío, Maipo y Colchagua",
+    "image": "/img/caja_maw.jpg",
+    "price": "$95.000",
+    "bloques": [
+      {
+        "tipoCopa": "rosado",
+        "cantidadBotellas": 1,
+        "nombreVino": "Keluna Rosé, Cabernet Sauvignon/Cabernet Franc, Valle del Maipo"
+      },
+      {
+        "tipoCopa": "espumante",
+        "cantidadBotellas": 1,
+        "nombreVino": "Ai! Brut, Chardonnay/Pinot Noir, Valle del Bío Bío"
+      },
+      {
+        "tipoCopa": "rosado",
+        "cantidadBotellas": 1,
+        "nombreVino": "Livianita de Sangre Cocktail Brut Zero, Cinsault/Chardonnay, Valles de Itata y Cachapoal"
+      },
+      {
+        "tipoCopa": "blanco",
+        "cantidadBotellas": 1,
+        "nombreVino": "El Infaltable Chardonnay, Valle de Colchagua-Peralillo"
+      },
+      {
+        "tipoCopa": "tinto",
+        "cantidadBotellas": 1,
+        "nombreVino": "El Infaltable Carménère, Valle del Maipo"
+      },
+      {
+        "tipoCopa": "tinto",
+        "cantidadBotellas": 1,
+        "nombreVino": "El Infaltable Syrah, Valle de Colchagua-Pumanque"
+      }
+    ]
+  }
+]
