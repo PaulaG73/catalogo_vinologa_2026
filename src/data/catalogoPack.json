@@ -436,6 +436,7 @@
     "valle": "Valle de Colchagua",
     "image": "/img/caja_pillo_owm.jpg",
     "price": "$60.000",
+    "priceOferta": "$50.000",
     "bloques": [
       {
         "tipoCopa": "tinto",
