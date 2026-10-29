@@ -60,6 +60,7 @@
     "id": "4",
     "title": "N°4 Ensamblajes Tintos/OWM Wines",
     "valle": "Valle de Colchagua",
+    "agotado": true,
     "image": "/img/Tintos.jpg",
     "price": "$25.000",
     "bloques": [
@@ -167,6 +168,7 @@
     "id": "9",
     "title": "N°9 Tripack OMG!/OWM Wines",
     "valle": "Valle de Colchagua",
+    "agotado": true,
     "image": "/img/OMG!.jpg",
     "price": "$35.000",
     "bloques": [
@@ -360,20 +362,15 @@
     "id": "17",
     "title": "N°17 Caja Algorta Grand Reserve",
     "valle": "Valle de Rapel",
-    "agotado": true,
     "image": "/img/GR_Algorta.jpg",
     "price": "$40.000",
     "bloques": [
       {
         "tipoCopa": "tinto",
-        "cantidadBotellas": 3,
+        "cantidadBotellas": 6,
         "nombreVino": "Grand Reserve, Carménère"
-      },
-      {
-        "tipoCopa": "tinto",
-        "cantidadBotellas": 3,
-        "nombreVino": "Grand Reserve, Cabernet Sauvignon"
       }
+     
     ]
   },
   {
@@ -405,6 +402,7 @@
     "id": "19",
     "title": "N°19 Caja OWM/Mujer Andina Wines",
     "valle": "Valles del Bío Bío, Maipo y Colchagua",
+    "agotado": true,
     "image": "/img/caja_pillo_maw.jpg",
     "price": "$60.000",
     "bloques": [
@@ -434,9 +432,9 @@
     "id": "20",
     "title": "N°20 Caja OWM Wines",
     "valle": "Valle de Colchagua",
+    "agotado": true,
     "image": "/img/caja_pillo_owm.jpg",
     "price": "$60.000",
-    "priceOferta": "$50.000",
     "bloques": [
       {
         "tipoCopa": "tinto",
@@ -464,6 +462,7 @@
     "id": "21",
     "title": "N°21 Caja OWM/Alchemy Wines",
     "valle": "Valles de Colchagua y Cachapoal",
+    "agotado": true,
     "image": "/img/caja_pillo_alchemy.jpg",
     "price": "$60.000",
     "bloques": [
@@ -493,14 +492,14 @@
     "id": "22",
     "title": "N°22 Caja Colección Algorta",
     "valle": "Valle de Rapel",
-    "agotado": true,
     "image": "/img/coleccion-algorta.jpg",
     "price": "$55.000",
+    "priceOferta": "$50.000",
     "bloques": [
       {
         "tipoCopa": "tinto",
         "cantidadBotellas": 2,
-        "nombreVino": "Grand Reserve, Cabernet Sauvignon"
+        "nombreVino": "Grand Reserve, Carménère"
       },
       {
         "tipoCopa": "tinto",
@@ -563,12 +562,12 @@
       },
       {
         "tipoCopa": "tinto",
-        "cantidadBotellas": 1,
+        "cantidadBotellas": 2,
         "nombreVino": "El Infaltable Carménère, Mujer Andina Wines"
       },
       {
         "tipoCopa": "tinto",
-        "cantidadBotellas": 2,
+        "cantidadBotellas": 1,
         "nombreVino": "Jardinero Touriga Nacional, Viñateros de Raíz"
       },
       {

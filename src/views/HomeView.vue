@@ -61,8 +61,41 @@
     </div>
   </section>
   <section id="packs" class="home-section home-section--slate pt-4 pt-md-5 pb-2 pb-md-3">
-    <div class="container text-center">
-      <h3 class="mb-4 fw-bold">Elige aquí tus packs!!!</h3>
+    <div class="container text-center packs-heading">
+      <h3 class="mb-2 fw-bold">Elige aquí tus packs!!!</h3>
+      <p class="packs-swipe-hint d-md-none">
+        <span class="packs-swipe-hint__text">Desplazar hacia la derecha</span>
+        <span class="packs-swipe-hint__arrow" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+          </svg>
+        </span>
+      </p>
+      <div class="packs-heading-arrows d-none d-md-flex">
+        <button
+          type="button"
+          class="packs-carousel-arrow packs-carousel-arrow--prev"
+          aria-label="Ver packs anteriores"
+          @click="scrollCarousel(-1)"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+            <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+          </svg>
+        </button>
+        <button
+          type="button"
+          class="packs-carousel-arrow packs-carousel-arrow--next"
+          aria-label="Ver packs siguientes"
+          @click="scrollCarousel(1)"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+          </svg>
+        </button>
+      </div>
     </div>
     <div
       class="packs-carousel-outer d-flex align-items-center gap-2 gap-sm-3 px-2 px-sm-3"
@@ -779,6 +812,70 @@ onUnmounted(() => {
       0 6px 22px rgba(var(--vin-acento-rgb), 0.7),
       0 0 0 4px rgba(228, 179, 188, 0.32);
   }
+}
+
+.packs-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.packs-swipe-hint {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  margin: 0.15rem auto 1.1rem;
+  font-family: 'Nunito', system-ui, sans-serif;
+  font-size: clamp(0.72rem, 2.5vw, 0.86rem);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  line-height: 1.2;
+  color: var(--vin-acento-sobre-negro, #e4b3bc);
+  opacity: 0.82;
+  white-space: nowrap;
+}
+
+.packs-swipe-hint__arrow {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 0.05rem;
+}
+
+.packs-swipe-hint__arrow svg {
+  display: block;
+  width: 0.85em;
+  height: 0.85em;
+}
+
+.packs-swipe-hint__arrow svg:first-child {
+  opacity: 0.45;
+  margin-right: -0.38em;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .packs-swipe-hint__arrow {
+    animation: packsSwipeNudge 1.85s ease-in-out infinite;
+  }
+}
+
+@keyframes packsSwipeNudge {
+  0%,
+  100% {
+    transform: translateX(0);
+    opacity: 0.7;
+  }
+  50% {
+    transform: translateX(7px);
+    opacity: 1;
+  }
+}
+
+.packs-heading-arrows {
+  align-items: center;
+  justify-content: center;
+  gap: 0.85rem;
+  margin: 0.15rem auto 1.1rem;
 }
 
 .packs-back-top {

@@ -59,7 +59,8 @@
             </a>
   
           </div>
-          <p class="mb-0 footer-copy">Derechos reservados &copy; 2026 PWebDev</p>
+          <p class="mb-0 footer-copy">Todos los Derechos reservados &copy; Vinóloga SpA 2026</p>
+          <p class="mb-0 footer-credit">Catálogo web desarrollado por PWebDev</p>
         </div>
   
         <!-- Espacio equilibrante (derecha, mismo ancho que izquierda) -->
@@ -237,6 +238,16 @@
   .footer-copy {
     font-size: 0.85rem;
     text-align: center;
+  }
+
+  .footer-credit {
+    margin-top: 0.1rem;
+    font-size: 0.68rem;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    line-height: 1.3;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.42);
   }
   
   .footer-side {
