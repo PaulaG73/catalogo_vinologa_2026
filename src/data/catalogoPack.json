@@ -99,6 +99,7 @@
     "id": "6",
     "title": "N°6 Winemaker's Tintos/Viña Algorta",
     "valle": "Valle de Rapel",
+    "agotado": true,
     "image": "/img/Tintos_SP.jpg",
     "price": "$32.000",
     "bloques": [
@@ -143,7 +144,6 @@
     "id": "8",
     "title": "N°8 Tripack Parrone/Alchemy Wines",
     "valle": "Valles de Colchagua y Cachapoal",
-    "agotado": true,
     "image": "/img/tripack_parrone.jpg",
     "price": "$30.000",
     "bloques": [
@@ -166,7 +166,31 @@
   },
   {
     "id": "9",
-    "title": "N°9 Tripack OMG!/OWM Wines",
+    "title": "N°9 Tripack Alchemy Wines",
+    "valle": "Valles de Colchagua y Cachapoal",
+    "image": "/img/tripack_alchemysta.jpg",
+    "price": "$35.000",
+    "bloques": [
+      {
+        "tipoCopa": "tinto",
+        "cantidadBotellas": 1,
+        "nombreVino": "Parróne Grand Reserve Syrah"
+      },
+      {
+        "tipoCopa": "tinto",
+        "cantidadBotellas": 1,
+        "nombreVino": "Parróne Grand Reserve Malbec"
+      },
+      {
+        "tipoCopa": "tinto",
+        "cantidadBotellas": 1,
+        "nombreVino": "Grand Cuveé, Ensamblaje 2022"
+      }
+    ]
+  },
+  {
+    "id": "10",
+    "title": "N°10 Tripack OMG!/OWM Wines",
     "valle": "Valle de Colchagua",
     "agotado": true,
     "image": "/img/OMG!.jpg",
@@ -190,57 +214,8 @@
     ]
   },
   {
-    "id": "10",
-    "title": "N°10 Tripack Mujer Andina",
-    "valle": "Valles del Itata, Cachapoal, Bío Bío, Maipo y Colchagua",
-    "image": "/img/tripack_maw.jpg",
-    "price": "$40.000",
-    "bloques": [
-      {
-        "tipoCopa": "rosado",
-        "cantidadBotellas": 1,
-        "nombreVino": "Keluna Rosé, Cabernet Sauvignon/Cabernet Franc, Valle del Maipo"
-      },
-      {
-        "tipoCopa": "espumante",
-        "cantidadBotellas": 1,
-        "nombreVino": "Ai! Brut, Chardonnay/Pinot Noir, Valle del Bío Bío"
-      },
-      {
-        "tipoCopa": "tinto",
-        "cantidadBotellas": 1,
-        "nombreVino": "El Infaltable Carménère, Valle del Maipo"
-      }
-    ]
-  },
-  {
     "id": "11",
-    "title": "N°11 Tripack Alchemy Wines",
-    "valle": "Valles de Colchagua y Cachapoal",
-    "agotado": true,
-    "image": "/img/tripack_alchemysta.jpg",
-    "price": "$35.000",
-    "bloques": [
-      {
-        "tipoCopa": "tinto",
-        "cantidadBotellas": 1,
-        "nombreVino": "Parróne Grand Reserve Syrah"
-      },
-      {
-        "tipoCopa": "tinto",
-        "cantidadBotellas": 1,
-        "nombreVino": "Parróne Grand Reserve Malbec"
-      },
-      {
-        "tipoCopa": "tinto",
-        "cantidadBotellas": 1,
-        "nombreVino": "Grand Cuveé, Ensamblaje 2022"
-      }
-    ]
-  },
-  {
-    "id": "12",
-    "title": "N°12 Sensaciones",
+    "title": "N°11 Sensaciones",
     "valle": "Valles de Cachapoal e Itata",
     "image": "/img/tripck_sensaciones.jpg",
     "price": "$39.000",
@@ -259,6 +234,30 @@
         "tipoCopa": "tinto",
         "cantidadBotellas": 1,
         "nombreVino": "Mala Testa, Garnache/Syrah/Mourvedre, Valle Cachapoal Andes, by Algorta"
+      }
+    ]
+  },
+  {
+    "id": "12",
+    "title": "N°12 Tripack Mujer Andina",
+    "valle": "Valles del Itata, Cachapoal, Bío Bío, Maipo y Colchagua",
+    "image": "/img/tripack_maw.jpg",
+    "price": "$40.000",
+    "bloques": [
+      {
+        "tipoCopa": "rosado",
+        "cantidadBotellas": 1,
+        "nombreVino": "Keluna Rosé, Cabernet Sauvignon/Cabernet Franc, Valle del Maipo"
+      },
+      {
+        "tipoCopa": "espumante",
+        "cantidadBotellas": 1,
+        "nombreVino": "Ai! Brut, Chardonnay/Pinot Noir, Valle del Bío Bío"
+      },
+      {
+        "tipoCopa": "tinto",
+        "cantidadBotellas": 1,
+        "nombreVino": "El Infaltable Carménère, Valle del Maipo"
       }
     ]
   },
@@ -314,6 +313,7 @@
     "id": "15",
     "title": "N°15 Infaltables New/Mujer Andina Wines",
     "valle": "Valles del Maipo y Colchagua",
+    "agotado": true,
     "image": "/img/tripack_infaltables_new.jpg",
     "price": "$50.000",
     "bloques": [
@@ -338,6 +338,7 @@
     "id": "16",
     "title": "N°16 Tripack Grand Levita/MujerAndina Wines",
     "valle": "Valles del Maipo y Colchagua",
+    "agotado": true,
     "image": "/img/tripack_grand_levita.jpg",
     "price": "$69.000",
     "bloques": [
@@ -370,7 +371,6 @@
         "cantidadBotellas": 6,
         "nombreVino": "Grand Reserve, Carménère"
       }
-     
     ]
   },
   {
@@ -400,7 +400,36 @@
   },
   {
     "id": "19",
-    "title": "N°19 Caja OWM/Mujer Andina Wines",
+    "title": "N°19 Caja Colección Algorta",
+    "valle": "Valle de Rapel",
+    "image": "/img/coleccion-algorta.jpg",
+    "price": "$55.000",
+    "bloques": [
+      {
+        "tipoCopa": "tinto",
+        "cantidadBotellas": 2,
+        "nombreVino": "Grand Reserve, Carménère"
+      },
+      {
+        "tipoCopa": "tinto",
+        "cantidadBotellas": 2,
+        "nombreVino": "Family Reserve, Cabernet Sauvignon"
+      },
+      {
+        "tipoCopa": "tinto",
+        "cantidadBotellas": 1,
+        "nombreVino": "Winemaker Series, Wild Carménère"
+      },
+      {
+        "tipoCopa": "tinto",
+        "cantidadBotellas": 1,
+        "nombreVino": "Winemaker Series, The Blend"
+      }
+    ]
+  },
+  {
+    "id": "20",
+    "title": "N°20 Caja OWM/Mujer Andina Wines",
     "valle": "Valles del Bío Bío, Maipo y Colchagua",
     "agotado": true,
     "image": "/img/caja_pillo_maw.jpg",
@@ -429,8 +458,8 @@
     ]
   },
   {
-    "id": "20",
-    "title": "N°20 Caja OWM Wines",
+    "id": "21",
+    "title": "N°21 Caja OWM Wines",
     "valle": "Valle de Colchagua",
     "agotado": true,
     "image": "/img/caja_pillo_owm.jpg",
@@ -459,8 +488,8 @@
     ]
   },
   {
-    "id": "21",
-    "title": "N°21 Caja OWM/Alchemy Wines",
+    "id": "22",
+    "title": "N°22 Caja OWM/Alchemy Wines",
     "valle": "Valles de Colchagua y Cachapoal",
     "agotado": true,
     "image": "/img/caja_pillo_alchemy.jpg",
@@ -489,40 +518,9 @@
     ]
   },
   {
-    "id": "22",
-    "title": "N°22 Caja Colección Algorta",
-    "valle": "Valle de Rapel",
-    "image": "/img/coleccion-algorta.jpg",
-    "price": "$55.000",
-    "priceOferta": "$50.000",
-    "bloques": [
-      {
-        "tipoCopa": "tinto",
-        "cantidadBotellas": 2,
-        "nombreVino": "Grand Reserve, Carménère"
-      },
-      {
-        "tipoCopa": "tinto",
-        "cantidadBotellas": 2,
-        "nombreVino": "Family Reserve, Cabernet Sauvignon"
-      },
-      {
-        "tipoCopa": "tinto",
-        "cantidadBotellas": 1,
-        "nombreVino": "Winemaker Series, Wild Carménère"
-      },
-      {
-        "tipoCopa": "tinto",
-        "cantidadBotellas": 1,
-        "nombreVino": "Winemaker Series, The Blend"
-      }
-    ]
-  },
-  {
     "id": "23",
     "title": "N°23 Caja Alchemy Wines",
     "valle": "Valles de Colchagua y Cachapoal",
-    "agotado": true,
     "image": "/img/caja_alchemysta_wines.jpg",
     "price": "$60.000",
     "bloques": [
@@ -581,6 +579,7 @@
     "id": "25",
     "title": "N°25 Caja Mujer Andina",
     "valle": "Valles del Itata, Cachapoal, Bío Bío, Maipo y Colchagua",
+    "agotado": true,
     "image": "/img/caja_maw.jpg",
     "price": "$95.000",
     "bloques": [
